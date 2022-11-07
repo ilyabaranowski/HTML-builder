@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const { stdin, stdout, exit } = require("process");
+const { stdin, stdout, exit } = process;
 const stream = fs.createWriteStream(path.join(__dirname, "note.txt"));
 
 stdout.write("Hello! Please, write something\n");
